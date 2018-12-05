@@ -6,7 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\IoC\IoC.csproj" />
+    <PackageReference Include="Autofac" Version="4.8.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\WipKata.Core\WipKata.Core.csproj" />
     <ProjectReference Include="..\WipKata.Infrastructure\WipKata.Infrastructure.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>

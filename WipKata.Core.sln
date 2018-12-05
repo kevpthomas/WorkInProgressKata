@@ -3,15 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2050
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WipKata.Core", "WipKata.Core\WipKata.Core.csproj", "{3DEF8D8B-E0F8-43AE-95A8-639449EFC1C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WipKata.Core", "WipKata.Core\WipKata.Core.csproj", "{3DEF8D8B-E0F8-43AE-95A8-639449EFC1C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IoC", "IoC\IoC.csproj", "{086CAD5B-3DE1-4D6B-8730-CC2170CB3874}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WipKata.Infrastructure", "WipKata.Infrastructure\WipKata.Infrastructure.csproj", "{178C85CC-5EFE-40EE-B670-A552111A3A6E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WipKata.Infrastructure", "WipKata.Infrastructure\WipKata.Infrastructure.csproj", "{178C85CC-5EFE-40EE-B670-A552111A3A6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WipKata.Runner", "WipKata.Runner\WipKata.Runner.csproj", "{5CEE9C81-830D-4933-9F79-C354EFEF4921}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WipKata.Runner", "WipKata.Runner\WipKata.Runner.csproj", "{5CEE9C81-830D-4933-9F79-C354EFEF4921}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTests", "UnitTests\UnitTests.csproj", "{0958EC09-6EC1-47EB-801F-60AC139AEC96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "UnitTests\UnitTests.csproj", "{0958EC09-6EC1-47EB-801F-60AC139AEC96}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9AB24328-1036-43E2-913A-A345EFDAE424}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +26,6 @@ Global
 		{3DEF8D8B-E0F8-43AE-95A8-639449EFC1C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DEF8D8B-E0F8-43AE-95A8-639449EFC1C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DEF8D8B-E0F8-43AE-95A8-639449EFC1C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{086CAD5B-3DE1-4D6B-8730-CC2170CB3874}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{086CAD5B-3DE1-4D6B-8730-CC2170CB3874}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{086CAD5B-3DE1-4D6B-8730-CC2170CB3874}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{086CAD5B-3DE1-4D6B-8730-CC2170CB3874}.Release|Any CPU.Build.0 = Release|Any CPU
 		{178C85CC-5EFE-40EE-B670-A552111A3A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{178C85CC-5EFE-40EE-B670-A552111A3A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{178C85CC-5EFE-40EE-B670-A552111A3A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU

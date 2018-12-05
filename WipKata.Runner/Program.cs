@@ -1,5 +1,8 @@
 ﻿using System;
-using TinyIoC;
+using System.IO;
+using System.Reflection;
+using System.Runtime.Loader;
+using Autofac;
 using WipKata.Core.Interfaces;
 
 namespace WipKata.Runner
@@ -8,11 +11,19 @@ namespace WipKata.Runner
     {
         static void Main(string[] args)
         {            
-            RunnerIoCConfig.Instance.Register();
- 
             Console.Clear();
 
-            var cardProcessor = TinyIoCContainer.Current.Resolve<ICardProcessor>();
+            var builder = new ContainerBuilder();
+
+            var path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            AssemblyLoadContext.Default.LoadFromAssemblyPath(Path.Combine(path, "WipKata.Infrastructure.dll"));
+            var allAssemblies = AppDomain.CurrentDomain.GetAssemblies();
+
+            builder.RegisterAssemblyTypes(allAssemblies).AsImplementedInterfaces();
+
+            var container = builder.Build();
+
+            var cardProcessor = container.Resolve<ICardProcessor>();
             cardProcessor.RunAllSequences();
 
             Console.Read();
