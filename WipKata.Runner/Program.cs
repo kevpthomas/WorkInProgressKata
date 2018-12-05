@@ -23,8 +23,12 @@ namespace WipKata.Runner
 
             var container = builder.Build();
 
-            var cardProcessor = container.Resolve<ICardProcessor>();
-            cardProcessor.RunAllSequences();
+            // https://autofaccn.readthedocs.io/en/latest/getting-started/index.html#application-execution
+            using (var scope = container.BeginLifetimeScope())
+            {
+                var cardProcessor = scope.Resolve<ICardProcessor>();
+                cardProcessor.RunAllSequences();
+            }
 
             Console.Read();
         }
