@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\IoC\IoC.csproj" />
+    <ProjectReference Include="..\IoC\IoC.csproj" />
     <ProjectReference Include="..\WipKata.Core\WipKata.Core.csproj" />
     <ProjectReference Include="..\WipKata.Infrastructure\WipKata.Infrastructure.csproj">
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
