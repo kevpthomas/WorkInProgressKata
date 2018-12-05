@@ -14,5 +14,10 @@ namespace WipKata.Infrastructure
         {
             Console.WriteLine(format, arg0);
         }
+
+        public void OutputLine()
+        {
+            Console.WriteLine();
+        }
     }
 }

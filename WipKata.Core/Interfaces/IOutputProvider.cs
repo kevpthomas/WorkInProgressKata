@@ -18,5 +18,10 @@
         /// <param name="format">A composite format string.</param>
         /// <param name="arg0">An object to output using format.</param>
         void OutputLine(string format, object arg0);
+
+        /// <summary>
+        /// Outputs a blank line.
+        /// </summary>
+        void OutputLine();
     }
 }

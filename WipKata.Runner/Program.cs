@@ -1,4 +1,6 @@
 ﻿using System;
+using TinyIoC;
+using WipKata.Core.Interfaces;
 
 namespace WipKata.Runner
 {
@@ -10,7 +12,10 @@ namespace WipKata.Runner
  
             Console.Clear();
 
-            Console.WriteLine("Hello World!");
+            var cardProcessor = TinyIoCContainer.Current.Resolve<ICardProcessor>();
+            cardProcessor.RunAllSequences();
+
+            Console.Read();
         }
     }
 }
